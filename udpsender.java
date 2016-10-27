@@ -1,16 +1,15 @@
 import java.net.DatagramPacket;
-import edu.utulsa.unet.UDPSocket; 
+import edu.utulsa.unet.UDPSocket;
 //import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class udpsender {
-	static final String SERVER = "linux1.ens.utulsa.edu";
+	static final String SERVER = "localhost";
 	static final int PORT = 32456;
 
 	public static void main(String[] args)
 	{
 		try {
-
 			byte [] buffer = ("Hello World- or rather Mauricio saying hello through UDP").getBytes();
 			UDPSocket socket = new UDPSocket(23456);
 			//DatagramSocket socket = new DatagramSocket(23456);
